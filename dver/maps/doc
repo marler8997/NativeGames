@@ -1,0 +1,68 @@
+
+
+
+To create maps, you can define them in a map file, and then
+that map file can be used to render the map at runtime, or
+create code to render the map at compile time.
+
+
+----------------------------------
+Layers
+----------------------------------
+
+I could support layers based on numbers.
+I could also support layers based on names.
+All a layer means is the order in which the
+object is rendered.
+
+// This just specifis the order the layers are rendered
+// Each map can only have 1 layers command
+Layers Background Players Hud
+
+// This specifies the default layer everything will go to
+DefaultLayer Background
+
+
+Remember, all "layer" means is that the rendering will appear
+in different groups
+
+Render everything in layer 0
+Render everything in layer 1
+...
+
+
+TODO: how do you specify/override the layer?
+
+
+-------------------------------------
+Drawing Surfaces
+-------------------------------------
+
+You can draw on different surfaces
+
+You could draw on the "window" surface.
+All locations on the "window" surface
+are relative to the window.
+
+
+You could define your own surface.
+A Custom surface can be moved relative to the
+window.
+
+
+
+------------------------------------
+Example
+------------------------------------
+
+
+
+// Draw to the window surface
+// Note: the default surface is the window surface
+//       so you don't need to explicitly specify it
+text "Hello World"
+
+
+// For now we will use XML but I may write a DSL
+<text value="Hello World!"/>
+

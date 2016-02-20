@@ -1,0 +1,18 @@
+
+
+
+Potential APIs for screen size
+
+UseCases
+--------------------
+
+1. Game content has a static size determined at startup and cannot change.
+
+2. Window size can change, application has the option to set the min/max sizes.
+
+   - App specifies a callback for when the size changes.
+
+
+Minimize/Maximize
+
+App provides callback for when then window is mimized/maximized

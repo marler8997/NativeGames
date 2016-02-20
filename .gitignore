@@ -1,0 +1,14 @@
+*~
+
+*.exe
+*.dll
+*.obj
+*.pdb
+
+*.exp
+*.lib
+
+*.suo
+
+obj/
+bin/
